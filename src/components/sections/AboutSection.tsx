@@ -48,7 +48,7 @@ export const AboutSection = () => {
             <div className="relative">
               <img 
                 src={safetyTrust} 
-                alt="Safety and Trust" 
+                alt="უსაფრთხოება და ნდობა - ფხიზელი მძღოლი" 
                 className="w-full rounded-2xl shadow-elegant"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>

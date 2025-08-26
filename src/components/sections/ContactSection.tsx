@@ -110,10 +110,11 @@ export const ContactSection = () => {
             <Button 
               variant="call" 
               size="xl"
-              className="w-full"
+              className="w-full min-h-[44px]"
               onClick={() => window.open('tel:+995595100334')}
+              aria-label="დაუყოვნებლივ დარეკვა ნომერზე 595 100 334"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-5 h-5" aria-hidden="true" />
               დაუყოვნებლივ დაზარეთ
             </Button>
           </div>
@@ -173,7 +174,8 @@ export const ContactSection = () => {
                   type="submit" 
                   variant="success" 
                   size="xl" 
-                  className="w-full"
+                  className="w-full min-h-[44px]"
+                  aria-label="შეტყობინების გაგზავნა"
                 >
                   გაგზავნა
                 </Button>
@@ -199,9 +201,10 @@ export const ContactSection = () => {
               variant="call" 
               size="xl"
               onClick={() => window.open('tel:+995595100334')}
-              className="text-xl px-12 bg-secondary-foreground text-secondary hover:bg-secondary-foreground/90"
+              className="text-xl px-12 bg-secondary-foreground text-secondary hover:bg-secondary-foreground/90 min-h-[44px]"
+              aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 595 100 334"
             >
-              <Phone className="w-6 h-6" />
+              <Phone className="w-6 h-6" aria-hidden="true" />
               595 100 334
             </Button>
           </Card>

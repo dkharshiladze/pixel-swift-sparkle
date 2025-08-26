@@ -90,15 +90,18 @@ export const HeroSection = () => {
                 variant="call" 
                 size="xl"
                 onClick={handleQuickCall}
-                className="text-xl px-8"
+                className="text-xl px-8 min-h-[44px]"
+                aria-label="დარეკვა ნომერზე 595 100 334"
               >
-                <Phone className="w-6 h-6" />
+                <Phone className="w-6 h-6" aria-hidden="true" />
                 595 100 334
               </Button>
               <Button 
                 variant="hero" 
                 size="xl"
                 onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                className="min-h-[44px]"
+                aria-label="გადასვლა ონლაინ მოთხოვნის ფორმაზე"
               >
                 ონლაინ მოთხოვნა
               </Button>
@@ -109,9 +112,9 @@ export const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <Card className="w-full max-w-md p-8 gradient-card shadow-elegant backdrop-blur-sm border-primary-light/20">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-card-foreground mb-2">
+                <h2 className="text-2xl font-bold text-card-foreground mb-2">
                   გამოიძახეთ მძღოლი
-                </h3>
+                </h2>
                 <p className="text-muted-foreground">
                   დატოვეთ თქვენი ნომერი და ჩვენ დაგიკავშირდებით
                 </p>
@@ -141,7 +144,8 @@ export const HeroSection = () => {
                   type="submit" 
                   variant="success" 
                   size="lg" 
-                  className="w-full h-12 text-base font-semibold"
+                  className="w-full h-12 text-base font-semibold min-h-[44px]"
+                  aria-label="მოთხოვნის გაგზავნა"
                 >
                   გაგზავნა
                 </Button>

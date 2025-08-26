@@ -34,8 +34,8 @@ All colors MUST be HSL for optimal theming and animations.
     --success-foreground: 0 0% 98%;
 
     /* Muted tones for subtle elements */
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 15% 40%;
 
     /* Accent colors */
     --accent: 220 25% 92%;
@@ -107,7 +107,7 @@ All colors MUST be HSL for optimal theming and animations.
     --success-foreground: 220 25% 8%;
 
     --muted: 220 20% 15%;
-    --muted-foreground: 220 15% 65%;
+    --muted-foreground: 220 15% 70%;
 
     --accent: 220 20% 18%;
     --accent-foreground: 220 15% 92%;

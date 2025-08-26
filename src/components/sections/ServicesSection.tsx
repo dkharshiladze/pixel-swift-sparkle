@@ -49,7 +49,7 @@ export const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
-            <img src={serviceIcon} alt="Service Icon" className="w-12 h-12 rounded-lg" />
+            <img src={serviceIcon} alt="სერვისის იკონა" className="w-12 h-12 rounded-lg" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               ჩვენი სერვისები
             </h2>
@@ -96,16 +96,18 @@ export const ServicesSection = () => {
               variant="call" 
               size="xl"
               onClick={() => window.open('tel:+995595100334')}
-              className="px-12"
+              className="px-12 min-h-[44px]"
+              aria-label="დარეკვა ნომერზე 595 100 334"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-5 h-5" aria-hidden="true" />
               595 100 334
             </Button>
             <Button 
               variant="hero" 
               size="xl"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-12"
+              className="px-12 min-h-[44px]"
+              aria-label="გადასვლა კონტაქტის სექციაზე"
             >
               ონლაინ მოთხოვნა
             </Button>

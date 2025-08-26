@@ -29,7 +29,8 @@ export const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
+                  aria-label="გადასვლა სერვისების სექციაზე"
                 >
                   სერვისები
                 </button>
@@ -37,7 +38,8 @@ export const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
+                  aria-label="გადასვლა ჩვენს შესახებ სექციაზე"
                 >
                   ჩვენს შესახებ
                 </button>
@@ -45,7 +47,8 @@ export const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
+                  aria-label="გადასვლა კონტაქტის სექციაზე"
                 >
                   კონტაქტი
                 </button>
@@ -53,7 +56,8 @@ export const Footer = () => {
               <li>
                 <button 
                   onClick={() => window.open('https://www.facebook.com/pxizelimdzgoli.ge/', '_blank')}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
+                  aria-label="გახსნა Facebook გვერდი ახალ ფანჯარაში"
                 >
                   Facebook
                 </button>
@@ -115,10 +119,16 @@ export const Footer = () => {
               © 2024 ფხიზელი მძღოლი. ყველა უფლება დაცულია.
             </div>
             <div className="flex items-center gap-6 text-sm text-primary-foreground/80">
-              <button className="hover:text-primary-foreground transition-smooth">
+              <button 
+                className="hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
+                aria-label="კონფიდენციალურობის პოლიტიკის ნახვა"
+              >
                 კონფიდენციალურობის პოლიტიკა
               </button>
-              <button className="hover:text-primary-foreground transition-smooth">
+              <button 
+                className="hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
+                aria-label="სერვისის პირობების ნახვა"
+              >
                 სერვისის პირობები
               </button>
             </div>
@@ -132,9 +142,10 @@ export const Footer = () => {
           <div className="flex items-center justify-center">
             <button 
               onClick={() => window.open('tel:+995595100334')}
-              className="flex items-center gap-3 text-secondary-foreground hover:scale-105 transition-spring"
+              className="flex items-center gap-3 text-secondary-foreground hover:scale-105 transition-spring min-h-[44px] px-4 py-2"
+              aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 595 100 334"
             >
-              <Phone className="w-5 h-5 animate-pulse" />
+              <Phone className="w-5 h-5 animate-pulse" aria-hidden="true" />
               <span className="font-bold text-lg">საგანგებო შემთხვევებისთვის: 595 100 334</span>
             </button>
           </div>

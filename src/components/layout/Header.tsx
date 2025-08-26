@@ -29,22 +29,25 @@ export const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="მთავარი ნავიგაცია">
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className="text-foreground hover:text-primary transition-smooth min-h-[44px] px-4 py-2"
+              aria-label="გადასვლა სერვისების სექციაზე"
             >
               სერვისები
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className="text-foreground hover:text-primary transition-smooth min-h-[44px] px-4 py-2"
+              aria-label="გადასვლა ჩვენს შესახებ სექციაზე"
             >
               ჩვენს შესახებ
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className="text-foreground hover:text-primary transition-smooth min-h-[44px] px-4 py-2"
+              aria-label="გადასვლა კონტაქტების სექციაზე"
             >
               კონტაქტი
             </button>
@@ -55,53 +58,61 @@ export const Header = () => {
             <Button 
               variant="call" 
               size="lg"
-              className="hidden sm:flex"
+              className="hidden sm:flex min-h-[44px]"
               onClick={() => window.open('tel:+995595100334')}
+              aria-label="დარეკვა ნომერზე 595 100 334"
             >
-              <Phone className="w-4 h-4" />
+              <Phone className="w-4 h-4" aria-hidden="true" />
               595 100 334
             </Button>
             
             <Button 
               variant="ghost" 
               size="icon"
-              className="md:hidden"
+              className="md:hidden min-w-[44px] min-h-[44px]"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "მენიუს დახურვა" : "მენიუს გახსნა"}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
-              {isMenuOpen ? <X /> : <Menu />}
+              {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
             </Button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t bg-background/98 backdrop-blur-md">
-            <nav className="flex flex-col space-y-4">
+          <div id="mobile-menu" className="md:hidden py-4 border-t bg-background/98 backdrop-blur-md">
+            <nav className="flex flex-col space-y-4" role="navigation" aria-label="მობაილური ნავიგაცია">
               <button 
                 onClick={() => scrollToSection('services')}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                className="text-left text-foreground hover:text-primary transition-smooth py-3 px-4 min-h-[44px]"
+                aria-label="გადასვლა სერვისების სექციაზე"
               >
                 სერვისები
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                className="text-left text-foreground hover:text-primary transition-smooth py-3 px-4 min-h-[44px]"
+                aria-label="გადასვლა ჩვენს შესახებ სექციაზე"
               >
                 ჩვენს შესახებ
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                className="text-left text-foreground hover:text-primary transition-smooth py-3 px-4 min-h-[44px]"
+                aria-label="გადასვლა კონტაქტების სექციაზე"
               >
                 კონტაქტი
               </button>
               <Button 
                 variant="call" 
                 size="lg"
-                className="w-full justify-center mt-4"
+                className="w-full justify-center mt-4 min-h-[44px]"
                 onClick={() => window.open('tel:+995595100334')}
+                aria-label="დარეკვა ნომერზე 595 100 334"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4" aria-hidden="true" />
                 595 100 334
               </Button>
             </nav>
