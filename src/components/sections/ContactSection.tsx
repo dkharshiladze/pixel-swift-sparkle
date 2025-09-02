@@ -1,38 +1,8 @@
-import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 export const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.phone.trim()) {
-      toast({
-        title: "შეცდომა",
-        description: "გთხოვთ, შეიყვანეთ ტელეფონის ნომერი",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    toast({
-      title: "წერილი გაგზავნილია!",
-      description: "ჩვენი ოპერატორი დაგიკავშირდებათ უახლოეს დროში",
-      variant: "default"
-    });
-    
-    setFormData({ name: "", phone: "", message: "" });
-  };
 
   const contactInfo = [
     {
@@ -73,13 +43,9 @@ export const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-6">
-            <h3 className="text-2xl font-bold text-foreground mb-8">
-              საკონტაქტო ინფორმაცია
-            </h3>
-            
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((info, index) => (
               <Card 
                 key={index} 
@@ -88,103 +54,35 @@ export const ContactSection = () => {
                 }`}
                 onClick={info.action}
               >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center text-primary-foreground flex-shrink-0">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center text-primary-foreground mx-auto mb-4">
                     {info.icon}
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">
-                      {info.title}
-                    </h4>
-                    {info.details.map((detail, detailIndex) => (
-                      <p key={detailIndex} className="text-muted-foreground text-sm">
-                        {detail}
-                      </p>
-                    ))}
-                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    {info.title}
+                  </h4>
+                  {info.details.map((detail, detailIndex) => (
+                    <p key={detailIndex} className="text-muted-foreground text-sm">
+                      {detail}
+                    </p>
+                  ))}
                 </div>
               </Card>
             ))}
+          </div>
 
-            {/* Quick Call Button */}
+          {/* Quick Call Button */}
+          <div className="text-center">
             <Button 
               variant="call" 
               size="xl"
-              className="w-full min-h-[44px]"
+              className="min-h-[44px] px-12"
               onClick={() => window.open('tel:+995595100334')}
               aria-label="დაუყოვნებლივ დარეკვა ნომერზე 595 100 334"
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
               დაუყოვნებლივ დაზარეთ
             </Button>
-          </div>
-
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="p-8 gradient-card shadow-elegant">
-              <h3 className="text-2xl font-bold text-card-foreground mb-6">
-                გაგზავნეთ შეტყობინება
-              </h3>
-              <p className="text-muted-foreground mb-8">
-                შეავსეთ ფორმა და ჩვენი ოპერატორი დაგიკავშირდებათ უახლოეს დროში
-              </p>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      სახელი (არასავალდებულო)
-                    </label>
-                    <Input
-                      type="text"
-                      placeholder="თქვენი სახელი"
-                      value={formData.name}
-                      onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                      className="h-12"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      ტელეფონის ნომერი *
-                    </label>
-                    <Input
-                      type="tel"
-                      placeholder="+995 5__ ___ ___"
-                      value={formData.phone}
-                      onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                      className="h-12"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    შეტყობინება (არასავალდებულო)
-                  </label>
-                  <Textarea
-                    placeholder="მოგვიყევით თქვენი მოთხოვნის შესახებ..."
-                    value={formData.message}
-                    onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                    className="min-h-[120px] resize-none"
-                  />
-                </div>
-
-                <Button 
-                  type="submit" 
-                  variant="success" 
-                  size="xl" 
-                  className="w-full min-h-[44px]"
-                  aria-label="შეტყობინების გაგზავნა"
-                >
-                  გაგზავნა
-                </Button>
-              </form>
-
-              <p className="text-xs text-muted-foreground text-center mt-6">
-                * ჩვენთან კონფიდენციალურობა სრულად დაცულია
-              </p>
-            </Card>
           </div>
         </div>
 

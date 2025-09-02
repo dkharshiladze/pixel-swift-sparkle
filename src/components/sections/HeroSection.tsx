@@ -1,39 +1,10 @@
 import { Phone, Clock, Shield, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card } from "@/components/ui/card";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 import heroBackground from "@/assets/hero-background.webp";
 
 export const HeroSection = () => {
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [name, setName] = useState("");
-  const { toast } = useToast();
-
   const handleQuickCall = () => {
     window.open('tel:+995595100334');
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!phoneNumber.trim()) {
-      toast({
-        title: "შეცდომა",
-        description: "გთხოვთ, შეიყვანეთ ტელეფონის ნომერი",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    toast({
-      title: "მოთხოვნა მიღებულია!",
-      description: "ჩვენი ოპერატორი დაგიკავშირდებათ 2 წუთში",
-      variant: "default"
-    });
-    
-    setPhoneNumber("");
-    setName("");
   };
 
   return (
@@ -85,7 +56,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Quick Call Button */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <Button 
                 variant="call" 
                 size="xl"
@@ -96,65 +67,7 @@ export const HeroSection = () => {
                 <Phone className="w-6 h-6" aria-hidden="true" />
                 595 100 334
               </Button>
-              <Button 
-                variant="hero" 
-                size="xl"
-                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-                className="min-h-[44px]"
-                aria-label="გადასვლა ონლაინ მოთხოვნის ფორმაზე"
-              >
-                ონლაინ მოთხოვნა
-              </Button>
             </div>
-          </div>
-
-          {/* Right Column - Contact Form */}
-          <div className="flex justify-center lg:justify-end">
-            <Card className="w-full max-w-md p-8 gradient-card shadow-elegant backdrop-blur-sm border-primary-light/20">
-              <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-card-foreground mb-2">
-                  გამოიძახეთ მძღოლი
-                </h2>
-                <p className="text-muted-foreground">
-                  დატოვეთ თქვენი ნომერი და ჩვენ დაგიკავშირდებით
-                </p>
-              </div>
-
-              <form onSubmit={handleSubmit} className="space-y-4" id="contact-form">
-                <div>
-                  <Input
-                    type="text"
-                    placeholder="თქვენი სახელი (არასავალდებულო)"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="h-12"
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="tel"
-                    placeholder="+995 5__ ___ ___"
-                    value={phoneNumber}
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    className="h-12"
-                    required
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  variant="success" 
-                  size="lg" 
-                  className="w-full h-12 text-base font-semibold min-h-[44px]"
-                  aria-label="მოთხოვნის გაგზავნა"
-                >
-                  გაგზავნა
-                </Button>
-              </form>
-
-              <p className="text-xs text-muted-foreground text-center mt-4">
-                ჩვენთან კონფიდენციალურობა სრულად დაცულია
-              </p>
-            </Card>
           </div>
         </div>
       </div>
