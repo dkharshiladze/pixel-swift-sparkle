@@ -1,7 +1,7 @@
 import { Car, Clock, Shield, Users, Phone, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import serviceIcon from "@/assets/service-icon.jpg";
+import serviceIcon from "@/assets/service-icon.webp";
 
 export const ServicesSection = () => {
   const services = [

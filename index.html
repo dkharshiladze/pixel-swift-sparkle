@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ფხიზელი მძღოლი - 24 საათიანი სერვისი | 595 100 334</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" href="/src/assets/hero-background.webp" as="image" type="image/webp" fetchpriority="high">
+    
+    <!-- Cache control -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+    <meta http-equiv="Pragma" content="cache">
+    
+    <!-- Critical CSS inlined -->
+    <style>
+      :root{--background:220 15% 97%;--foreground:220 15% 15%;--primary:220 70% 25%;--primary-foreground:0 0% 98%;--secondary:15 85% 55%;--secondary-foreground:0 0% 98%}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:hsl(var(--background));color:hsl(var(--foreground));line-height:1.5}
+      #root{min-height:100vh}
+      .loading{display:flex;align-items:center;justify-content:center;min-height:100vh;font-size:1.125rem}
+    </style>
     <meta name="description" content="ფხიზელი მძღოლი - უსაფრთხო და სანდო მძღოლების სერვისი 24 საათის განმავლობაში. დაგიკავშირდებით 2 წუთში. ზარი: 595 100 334" />
     <meta name="keywords" content="ფხიზელი მძღოლი, მძღოლი, თბილისი, უსაფრთხოება, ავტომობილი, სერვისი, ნასვამი მძღოლი" />
     <meta name="author" content="ფხიზელი მძღოლი" />
@@ -48,7 +66,19 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading">იტვირთება...</div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Load non-critical CSS asynchronously -->
+    <script>
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/src/index.css';
+      link.media = 'print';
+      link.onload = function() { this.media = 'all'; };
+      document.head.appendChild(link);
+    </script>
   </body>
 </html>

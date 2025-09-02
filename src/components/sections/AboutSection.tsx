@@ -1,6 +1,6 @@
 import { Shield, Users, Award, Clock } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import safetyTrust from "@/assets/safety-trust.jpg";
+import safetyTrust from "@/assets/safety-trust.webp";
 
 export const AboutSection = () => {
   const stats = [
