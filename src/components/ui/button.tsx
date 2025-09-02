@@ -13,19 +13,19 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-button",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground shadow-sm",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-button hover:shadow-elegant",
         success:
           "bg-success text-success-foreground hover:bg-success/90 shadow-button hover:shadow-elegant",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghost: "hover:bg-accent hover:text-accent-foreground shadow-sm",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-accent text-secondary-foreground hover:scale-105 shadow-button hover:shadow-elegant font-semibold",
         call: "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-button hover:shadow-elegant animate-pulse hover:animate-none font-bold",
       },
       size: {
         default: "h-11 px-6 py-3",
-        sm: "h-9 rounded-md px-4",
+        sm: "h-11 rounded-md px-4",
         lg: "h-12 rounded-lg px-8 text-base",
         xl: "h-14 rounded-xl px-10 text-lg",
         icon: "h-11 w-11",
