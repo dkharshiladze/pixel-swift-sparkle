@@ -30,7 +30,7 @@ export const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/30">
+    <section id="contact" className="py-16 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -99,7 +99,7 @@ export const ContactSection = () => {
               variant="call" 
               size="xl"
               onClick={() => window.open('tel:+995595100334')}
-              className="text-xl px-12 bg-secondary-foreground text-secondary hover:bg-secondary-foreground/90 min-h-[44px]"
+              className="text-xl px-12 min-h-[44px]"
               aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 595 100 334"
             >
               <Phone className="w-6 h-6" aria-hidden="true" />

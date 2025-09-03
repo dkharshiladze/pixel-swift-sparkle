@@ -44,7 +44,7 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-muted/30">
+    <section id="services" className="py-16 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -101,15 +101,6 @@ export const ServicesSection = () => {
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
               595 100 334
-            </Button>
-            <Button 
-              variant="hero" 
-              size="xl"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-12 min-h-[44px]"
-              aria-label="გადასვლა კონტაქტის სექციაზე"
-            >
-              ონლაინ მოთხოვნა
             </Button>
           </div>
           <p className="text-sm text-muted-foreground mt-4">
