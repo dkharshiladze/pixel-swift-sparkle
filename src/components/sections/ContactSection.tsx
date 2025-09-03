@@ -58,9 +58,9 @@ export const ContactSection = () => {
                   <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center text-primary-foreground mx-auto mb-4">
                     {info.icon}
                   </div>
-                  <h4 className="font-semibold text-foreground mb-2">
+                  <h3 className="font-semibold text-foreground mb-2">
                     {info.title}
-                  </h4>
+                  </h3>
                   {info.details.map((detail, detailIndex) => (
                     <p key={detailIndex} className="text-muted-foreground text-sm">
                       {detail}

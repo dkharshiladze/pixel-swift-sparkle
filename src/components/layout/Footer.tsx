@@ -24,7 +24,7 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">სწრაფი ლინკები</h4>
+            <h3 className="text-lg font-semibold">სწრაფი ლინკები</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <button 
@@ -67,7 +67,7 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">კონტაქტი</h4>
+            <h3 className="text-lg font-semibold">კონტაქტი</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-secondary" />
@@ -90,7 +90,7 @@ export const Footer = () => {
 
           {/* Trust & Security */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">ნდობა და უსაფრთხოება</h4>
+            <h3 className="text-lg font-semibold">ნდობა და უსაფრთხოება</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
                 <Shield className="w-4 h-4 text-secondary" />

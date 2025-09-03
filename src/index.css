@@ -18,28 +18,28 @@ All colors MUST be HSL for optimal theming and animations.
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
 
-    /* Primary - Deep professional blue for trust and reliability (improved contrast) */
-    --primary: 220 80% 20%;
+    /* Primary - Deep professional blue for trust and reliability (enhanced contrast) */
+    --primary: 220 85% 15%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 220 75% 30%;
-    --primary-dark: 220 85% 15%;
+    --primary-light: 220 80% 25%;
+    --primary-dark: 220 90% 10%;
 
-    /* Secondary - Warm accent for calls-to-action (improved contrast) */
-    --secondary: 15 90% 45%;
+    /* Secondary - Warm accent for calls-to-action (enhanced contrast) */
+    --secondary: 15 95% 40%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 15 85% 55%;
+    --secondary-light: 15 90% 50%;
 
-    /* Success - Georgian green for confirmations (improved contrast) */
-    --success: 140 70% 35%;
+    /* Success - Georgian green for confirmations (enhanced contrast) */
+    --success: 140 75% 30%;
     --success-foreground: 0 0% 100%;
 
-    /* Muted tones for subtle elements (improved contrast) */
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 25% 35%;
+    /* Muted tones for subtle elements (enhanced contrast) */
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 30% 25%;
 
-    /* Accent colors */
-    --accent: 220 20% 88%;
-    --accent-foreground: 220 30% 20%;
+    /* Accent colors (enhanced contrast) */
+    --accent: 220 20% 90%;
+    --accent-foreground: 220 35% 15%;
 
     --destructive: 0 85% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -94,20 +94,20 @@ All colors MUST be HSL for optimal theming and animations.
     --popover: 220 20% 10%;
     --popover-foreground: 220 15% 92%;
 
-    --primary: 220 75% 60%;
-    --primary-foreground: 220 30% 5%;
-    --primary-light: 220 70% 70%;
-    --primary-dark: 220 80% 50%;
+    --primary: 220 80% 70%;
+    --primary-foreground: 220 30% 8%;
+    --primary-light: 220 75% 80%;
+    --primary-dark: 220 85% 60%;
 
-    --secondary: 15 85% 65%;
-    --secondary-foreground: 220 30% 5%;
-    --secondary-light: 15 80% 75%;
+    --secondary: 15 90% 70%;
+    --secondary-foreground: 220 30% 8%;
+    --secondary-light: 15 85% 80%;
 
-    --success: 140 65% 55%;
-    --success-foreground: 220 30% 5%;
+    --success: 140 70% 60%;
+    --success-foreground: 220 30% 8%;
 
-    --muted: 220 25% 18%;
-    --muted-foreground: 220 20% 75%;
+    --muted: 220 25% 15%;
+    --muted-foreground: 220 20% 80%;
 
     --accent: 220 20% 18%;
     --accent-foreground: 220 15% 92%;
