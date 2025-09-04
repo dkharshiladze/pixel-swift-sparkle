@@ -44,7 +44,7 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-muted">
+    <section id="services" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -89,24 +89,6 @@ export const ServicesSection = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="inline-flex flex-col sm:flex-row gap-4">
-            <Button 
-              variant="call" 
-              size="xl"
-              onClick={() => window.open('tel:+995595100334')}
-              className="px-12 min-h-[44px]"
-              aria-label="დარეკვა ნომერზე 595 100 334"
-            >
-              <Phone className="w-5 h-5" aria-hidden="true" />
-              595 100 334
-            </Button>
-          </div>
-          <p className="text-sm text-muted-foreground mt-4">
-            24 საათის განმავლობაში ხელმისაწვდომი
-          </p>
-        </div>
       </div>
     </section>
   );
