@@ -25,17 +25,17 @@ All colors MUST be HSL for optimal theming and animations.
     --primary-dark: 220 90% 10%;
 
     /* Secondary - Warm accent for calls-to-action (enhanced contrast) */
-    --secondary: 15 95% 40%;
+    --secondary: 15 95% 25%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 15 90% 50%;
+    --secondary-light: 15 90% 35%;
 
     /* Success - Georgian green for confirmations (enhanced contrast) */
     --success: 140 75% 30%;
     --success-foreground: 0 0% 100%;
 
     /* Muted tones for subtle elements (enhanced contrast) */
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 30% 25%;
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 50% 15%;
 
     /* Accent colors (enhanced contrast) */
     --accent: 220 20% 90%;
@@ -99,9 +99,9 @@ All colors MUST be HSL for optimal theming and animations.
     --primary-light: 220 75% 80%;
     --primary-dark: 220 85% 60%;
 
-    --secondary: 15 90% 70%;
+    --secondary: 15 90% 60%;
     --secondary-foreground: 220 30% 8%;
-    --secondary-light: 15 85% 80%;
+    --secondary-light: 15 85% 70%;
 
     --success: 140 70% 60%;
     --success-foreground: 220 30% 8%;
