@@ -71,14 +71,5 @@
     </div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Load non-critical CSS asynchronously -->
-    <script>
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = '/src/index.css';
-      link.media = 'print';
-      link.onload = function() { this.media = 'all'; };
-      document.head.appendChild(link);
-    </script>
   </body>
 </html>
