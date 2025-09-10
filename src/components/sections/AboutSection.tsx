@@ -49,7 +49,11 @@ export const AboutSection = () => {
               <img 
                 src={safetyTrust} 
                 alt="უსაფრთხოება და ნდობა - ფხიზელი მძღოლი" 
-                className="w-full rounded-2xl shadow-elegant"
+                className="w-full rounded-2xl shadow-elegant object-cover"
+                width="380" 
+                height="380"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
             </div>
