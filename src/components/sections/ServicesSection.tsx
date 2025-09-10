@@ -49,15 +49,7 @@ export const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
-            <img 
-              src={serviceIcon} 
-              alt="სერვისის იკონა" 
-              className="w-12 h-12 rounded-lg object-cover" 
-              width="48" 
-              height="48"
-              loading="lazy"
-              decoding="async"
-            />
+            <img src={serviceIcon} alt="სერვისის იკონა" className="w-12 h-12 rounded-lg" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               ჩვენი სერვისები
             </h2>
