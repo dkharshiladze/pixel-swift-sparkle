@@ -51,12 +51,12 @@ export const ServicesSection = () => {
           <div className="inline-flex items-center gap-3 mb-6">
             <img src={serviceIcon} alt="სერვისის იკონა" className="w-12 h-12 rounded-lg" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              ჩვენი სერვისები
+              ფხიზელი მძღოლი - ჩვენი სერვისები
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            ვთავazობთ სრულ სპექტრს უსაფრთხო ტრანსპორტირების სერვისებისა, 
-            რომელიც მორგებულია თქვენს საჭიროებებზე
+            სანდო 24 საათიანი სერვისი გამოცდილი მძღოლებით სრული კონფიდენციალურობით - 
+            ქალაქის ყველა რაიონში და ქალაქგარეთ მგზავრობისთვის
           </p>
         </div>
 
