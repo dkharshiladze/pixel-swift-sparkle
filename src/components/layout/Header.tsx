@@ -23,7 +23,7 @@ export const Header = () => {
               <span className="text-primary-foreground font-bold text-lg">ფ</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary">ფხიზელი მძღოლი</h1>
+              <div className="text-xl font-bold text-primary">ფხიზელი მძღოლი</div>
               <p className="text-xs text-muted-foreground">24 საათიანი სერვისი</p>
             </div>
           </div>
