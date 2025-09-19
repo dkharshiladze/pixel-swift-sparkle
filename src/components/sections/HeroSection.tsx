@@ -42,7 +42,7 @@ export const HeroSection = () => {
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-8">
               <div className="flex items-center gap-2 text-primary-foreground/90">
                 <Clock className="w-5 h-5 text-secondary" />
-                <span className="font-medium">24/7 მუშაობა</span>
+                <span className="font-medium">24/7 სამუშაო გრაფიკი</span>
               </div>
               {/* <div className="flex items-center gap-2 text-primary-foreground/90">
                 <Shield className="w-5 h-5 text-secondary" />
@@ -61,7 +61,7 @@ export const HeroSection = () => {
                 size="xl"
                 onClick={handleQuickCall}
                 className="text-xl px-8 min-h-[44px]"
-                aria-label="დარეკვა ნომერზე 595 100 334"
+                aria-label="დარეკვე ნომერზე 595 100 334"
               >
                 <Phone className="w-6 h-6" aria-hidden="true" />
                 595 100 334
