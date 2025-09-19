@@ -115,7 +115,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Testimonials */}
-{/*         <div>
+        <div>
           <h3 className="text-2xl font-bold text-foreground text-center mb-12">
             ფხიზელი მძღოლი - რას ამბობენ ჩვენი კლიენტები ჩვენს სანდო სერვისზე
           </h3>
@@ -137,7 +137,7 @@ export const AboutSection = () => {
             ))}
           </div> 
         </div>
-      </div> */}
+      </div> 
     </section>
   );
 };
