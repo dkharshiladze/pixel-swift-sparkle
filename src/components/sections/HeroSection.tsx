@@ -64,7 +64,7 @@ export const HeroSection = () => {
                 aria-label="დარეკე ნომერზე 591 924 924"
               >
                 <Phone className="w-6 h-6" aria-hidden="true" />
-                595 100 334
+                591 924 924
               </Button>
             </div>
           </div>
