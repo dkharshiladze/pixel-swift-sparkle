@@ -28,9 +28,9 @@ export const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-              ფხიზელი მძღოლის გამოძახება თბილისში - 24/7
+              მძღოლი გამოძახებით თბილისში
               <span className="block text-2xl md:text-3xl font-normal text-primary-foreground/90 mt-2">
-                24 საათიანი სერვისი
+                ფხიზელი მძღოლი 24/7
               </span>
             </h1>
             
