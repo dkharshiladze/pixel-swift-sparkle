@@ -61,7 +61,7 @@ export const HeroSection = () => {
                 size="xl"
                 onClick={handleQuickCall}
                 className="text-xl px-8 min-h-[44px]"
-                aria-label="დარეკვე ნომერზე 595 100 334"
+                aria-label="დარეკე ნომერზე 591 924 924"
               >
                 <Phone className="w-6 h-6" aria-hidden="true" />
                 595 100 334
