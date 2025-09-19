@@ -85,12 +85,12 @@ export const ContactSection = () => {
             <Button 
               variant="call" 
               size="xl"
-              onClick={() => window.open('tel:+995595100334')}
+              onClick={() => window.open('tel:+995591924924')}
               className="text-xl px-12 min-h-[44px]"
-              aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 595 100 334"
+              aria-label="გამოიძახე მძღოლი 591 924 924"
             >
               <Phone className="w-6 h-6" aria-hidden="true" />
-              595 100 334
+              591 924 924
             </Button>
           </Card>
         </div>
