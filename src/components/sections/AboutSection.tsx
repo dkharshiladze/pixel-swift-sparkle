@@ -115,28 +115,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Testimonials */}
-        <div>
-          <h3 className="text-2xl font-bold text-foreground text-center mb-12">
-            ფხიზელი მძღოლი - რას ამბობენ ჩვენი კლიენტები ჩვენს სანდო სერვისზე
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-6 gradient-card shadow-card">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <div key={i} className="w-4 h-4 bg-secondary rounded-full mr-1"></div>
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="font-semibold text-foreground">
-                  {testimonial.name}
-                </div>
-              </Card>
-            ))}
-          </div> 
-        </div>
+       
       </div> 
     </section>
   );
