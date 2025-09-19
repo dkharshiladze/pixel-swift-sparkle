@@ -22,10 +22,10 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Main Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            {/* <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 text-secondary" />
               <span className="text-secondary font-medium">სანდო სერვისი 2014 წლიდან</span>
-            </div>
+            </div> */}
             
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
               მძღოლი გამოძახებით თბილისში
