@@ -59,11 +59,11 @@ export const Header = () => {
               variant="call" 
               size="lg"
               className="hidden sm:flex min-h-[44px]"
-              onClick={() => window.open('tel:+995595100334')}
-              aria-label="დარეკვა ნომერზე 595 100 334"
+              onClick={() => window.open('tel:+995591924924')}
+              aria-label="დარეკვა ნომერზე 591 924 924"
             >
               <Phone className="w-4 h-4" aria-hidden="true" />
-              595 100 334
+              591 924 924
             </Button>
             
             <Button 
@@ -109,11 +109,11 @@ export const Header = () => {
                 variant="call" 
                 size="lg"
                 className="w-full justify-center mt-4 min-h-[44px]"
-                onClick={() => window.open('tel:+995595100334')}
-                aria-label="დარეკვა ნომერზე 595 100 334"
+                onClick={() => window.open('tel:+995591924924')}
+                aria-label="დარეკვა ნომერზე 591 924 924"
               >
                 <Phone className="w-4 h-4" aria-hidden="true" />
-                595 100 334
+                591 924 924
               </Button>
             </nav>
           </div>
