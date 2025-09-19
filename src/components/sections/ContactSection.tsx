@@ -14,7 +14,7 @@ export const ContactSection = () => {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "სამუშაო საათები",
-      details: ["24 საათი, 7 დღეში", "ყოველდღიური მომსახურება"]
+      details: ["24/7", "ყოველდღიური მომსახურება"]
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -24,8 +24,8 @@ export const ContactSection = () => {
     {
       icon: <Facebook className="w-6 h-6" />,
       title: "სოციალური ქსელები",
-      details: ["Facebook", "@pxizelimdzgoli.ge"],
-      action: () => window.open('https://www.facebook.com/pxizelimdzgoli.ge/', '_blank')
+      details: ["Facebook", "@fxizelimdzgoli.ge"],
+      action: () => window.open('https://www.facebook.com/mdzgoli.ge/', '_blank')
     }
   ];
 
