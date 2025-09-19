@@ -4,7 +4,7 @@ import heroBackground from "@/assets/hero-background.webp";
 
 export const HeroSection = () => {
   const handleQuickCall = () => {
-    window.open('tel:+995595100334');
+    window.open('tel:+9955951924924');
   };
 
   return (
@@ -24,11 +24,11 @@ export const HeroSection = () => {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 text-secondary" />
-              <span className="text-secondary font-medium">სანდო სერვისი 2019 წლიდან</span>
+              <span className="text-secondary font-medium">სანდო სერვისი 2014 წლიდან</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-              ფხიზელი მძღოლი
+              ფხიზელი მძღოლის გამოძახება თბილისში - 24/7
               <span className="block text-2xl md:text-3xl font-normal text-primary-foreground/90 mt-2">
                 24 საათიანი სერვისი
               </span>
