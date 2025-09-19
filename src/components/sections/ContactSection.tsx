@@ -8,8 +8,8 @@ export const ContactSection = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "ტელეფონი",
-      details: ["595 100 334", "+995 595 100 334"],
-      action: () => window.open('tel:+995595100334')
+      details: ["591 924 924", "+995 591 924 924"],
+      action: () => window.open('tel:+995591924924')
     },
     {
       icon: <Clock className="w-6 h-6" />,
