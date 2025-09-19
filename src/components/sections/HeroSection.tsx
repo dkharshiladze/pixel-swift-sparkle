@@ -35,8 +35,7 @@ export const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-lg mx-auto lg:mx-0">
-              უსაფრთხო და სანდო მძღოლების სერვისი ნებისმიერ დროს. 
-              ჩვენი ოპერატორი დაგიკავშირდებათ 2 წუთში.
+              გთავაზობთ ნასვამი მძღოლების მომსახურებას სწრაფად და უსაფრთხოდ
             </p>
 
             {/* Trust Indicators */}
