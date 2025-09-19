@@ -17,7 +17,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/90 text-sm leading-relaxed">
-              სანდო და უსაფრთხო მძღოლების სერვისი, რომელიც 2019 წლიდან 
+              სანდო და უსაფრთხო მძღოლების სერვისი, რომელიც 2014 წლიდან 
               ემსახურება ქართულ საზოგადოებას სრული კონფიდენციალურობით.
             </p>
           </div>
@@ -141,12 +141,12 @@ export const Footer = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-center">
             <button 
-              onClick={() => window.open('tel:+995595100334')}
+              onClick={() => window.open('tel:+995591924924')}
               className="flex items-center gap-3 text-secondary-foreground hover:scale-105 transition-spring min-h-[44px] px-4 py-2"
               aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 595 100 334"
             >
               <Phone className="w-5 h-5 animate-pulse" aria-hidden="true" />
-              <span className="font-bold text-lg">საგანგებო შემთხვევებისთვის: 595 100 334</span>
+              <span className="font-bold text-lg">საგანგებო შემთხვევებისთვის: 591 924 924</span>
             </button>
           </div>
         </div>
