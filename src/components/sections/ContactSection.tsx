@@ -72,28 +72,6 @@ export const ContactSection = () => {
           </div>
 
         </div>
-
-        {/* Emergency Contact Banner */}
-        <div className="mt-16 text-center">
-          <Card className="p-8 bg-gradient-accent shadow-elegant border-secondary/20">
-            <h3 className="text-2xl font-bold text-secondary-foreground mb-4">
-              საგანგებო შემთხვევებისთვის
-            </h3>
-            <p className="text-secondary-foreground/90 mb-6 text-lg">
-              ფირებს რთული იყოს მოღნით თქვენთვის ამ ნომერს. ჩვენ ყოველთვის მზად ვართ
-            </p>
-            <Button 
-              variant="call" 
-              size="xl"
-              onClick={() => window.open('tel:+995591924924')}
-              className="text-xl px-12 min-h-[44px]"
-              aria-label="გამოიძახე მძღოლი 591 924 924"
-            >
-              <Phone className="w-6 h-6" aria-hidden="true" />
-              591 924 924
-            </Button>
-          </Card>
-        </div>
       </div>
     </section>
   );
