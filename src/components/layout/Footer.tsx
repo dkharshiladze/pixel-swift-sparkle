@@ -17,14 +17,14 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/90 text-sm leading-relaxed">
-              სანდო და უსაფრთხო მძღოლების სერვისი, რომელიც 2014 წლიდან 
-              ემსახურება ქართულ საზოგადოებას სრული კონფიდენციალურობით.
+              სანდო და უსაფრთხო მძღოლის გამოძახების სერვისი, რომელიც 2014 წლიდან 
+              ემსახურება კლიენტებს.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">სწრაფი ლინკები</h3>
+            <h3 className="text-lg font-semibold">ლინკები</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <button 
@@ -55,7 +55,7 @@ export const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://www.facebook.com/pxizelimdzgoli.ge/', '_blank')}
+                  onClick={() => window.open('https://www.facebook.com/mdzgoli.ge/', '_blank')}
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth min-h-[44px] py-2"
                   aria-label="გახსნა Facebook გვერდი ახალ ფანჯარაში"
                 >
@@ -75,7 +75,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-secondary" />
-                <span>24/7 მუშაობა</span>
+                <span>24/7 გრაფიკი</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-secondary" />
@@ -83,7 +83,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Facebook className="w-4 h-4 text-secondary" />
-                <span>@pxizelimdzgoli.ge</span>
+                <span>@fxizelimdzgoli.ge</span>
               </div>
             </div>
           </div>
@@ -143,10 +143,10 @@ export const Footer = () => {
             <button 
               onClick={() => window.open('tel:+995591924924')}
               className="flex items-center gap-3 text-secondary-foreground hover:scale-105 transition-spring min-h-[44px] px-4 py-2"
-              aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 595 100 334"
+              aria-label="საგანგებო შემთხვევებისთვის დარეკვა ნომერზე 5591 924 924"
             >
               <Phone className="w-5 h-5 animate-pulse" aria-hidden="true" />
-              <span className="font-bold text-lg">საგანგებო შემთხვევებისთვის: 591 924 924</span>
+              <span className="font-bold text-lg">გამოიძახე მძღოლი: 591 924 924</span>
             </button>
           </div>
         </div>
