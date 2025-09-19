@@ -50,7 +50,7 @@ export const HeroSection = () => {
               </div> */}
               <div className="flex items-center gap-2 text-primary-foreground/90">
                 <Star className="w-5 h-5 text-secondary" />
-                <span className="font-medium">ღირსეული ფასები</span>
+                <span className="font-medium">მისაღები ფასები</span>
               </div>
             </div>
 
