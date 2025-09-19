@@ -24,7 +24,7 @@ export const Header = () => {
             </div>
             <div>
               <div className="text-xl font-bold text-primary">ფხიზელი მძღოლი</div>
-              <p className="text-xs text-muted-foreground">24 საათიანი სერვისი</p>
+              <p className="text-xs text-muted-foreground">591 924 924</p>
             </div>
           </div>
 
